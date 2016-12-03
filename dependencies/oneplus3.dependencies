@@ -6,7 +6,7 @@
    "branch":      "nougat"
  },
  {
-   "remote":      "cm",
+   "remote":      "emotroid",
    "repository":  "Emotroid-Rom/android_device_oppo_common",
    "target_path": "device/oppo/common",
    "branch":      "nougat"
