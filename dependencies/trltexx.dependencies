@@ -36,10 +36,10 @@
     "branch": "cm-14.1"
   },
   {
-    "remote": "cm",
-    "repository": "CyanogenMod/android_device_qcom_common",
+    "remote": "emotroid",
+    "repository": "Emotroid-Rom/android_device_qcom_common",
     "target_path": "device/qcom/common",
-    "branch": "cm-14.1"
+    "branch": "nougat"
   },
   {
     "remote": "cm",
