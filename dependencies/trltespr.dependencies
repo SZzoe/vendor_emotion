@@ -8,7 +8,7 @@
   {
     "remote":"emotroid",
     "repository": "Emotroid-Rom/android_device_samsung_trltespr",
-    "target_path": "device/samsung/trltexx",
+    "target_path": "device/samsung/trltespr",
     "branch": "nougat"
   },
   {
