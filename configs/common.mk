@@ -153,7 +153,8 @@ PRODUCT_PACKAGES += \
     LatinImeDictionaryPack \
     Stk \
     OmniSwitch \
-    EmotionControl
+    EmotionControl \
+    Masquerade
 
 #Build EmotionOTA only if EMOTION_VERSION_MAINTENANCE isn't Unofficial
 ifneq ($(EMOTION_VERSION_MAINTENANCE),Unofficial)
