@@ -61,8 +61,8 @@ usage() {
 
 
 # EMOTION version
-export EMOTION_VERSION_MAJOR="N"
-export EMOTION_VERSION_MINOR="beta31-r1"
+export EMOTION_VERSION_MAJOR="NG"
+export EMOTION_VERSION_MINOR="beta32-r1"
 export EMOTION_VERSION_MAINTENANCE="Unofficial"
 # Acceptable maintenance versions are; Stable, Official, Nightly or Unofficial
 
