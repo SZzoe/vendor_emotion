@@ -184,7 +184,6 @@ PRODUCT_PACKAGES += \
     CMWallpapers \
     Eleven \
     ExactCalculator \
-    Launcher3 \
     LockClock \
     Screencast \
     SoundRecorder \
