@@ -171,7 +171,7 @@ def fetch_dependencies(device):
 
     if len(syncable_repos) > 0:
         print('Syncing dependencies')
-        os.system('repo sync %s' % ' '.join(syncable_repos))
+        os.system('repo sync --force-sync %s' % ' '.join(syncable_repos))
 
 
 fetch_dependencies(device)
