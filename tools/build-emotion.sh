@@ -55,6 +55,12 @@ usage() {
 }
 
 
+# Resources Limits
+ulimit >& /dev/null
+ulimit -c unlimited
+ulimit -s unlimited
+
+
 # Import Colors
 . ./vendor/emotion/tools/colors
 . ./vendor/emotion/tools/res/emotion_start
@@ -63,7 +69,9 @@ usage() {
 # EMOTION version
 export EMOTION_VERSION_MAJOR="NG"
 export EMOTION_VERSION_MINOR="beta32-r1"
-export EMOTION_VERSION_MAINTENANCE="Unofficial"
+if [ -z "${EMOTION_VERSION_MAINTENANCE}" ]; then
+    export EMOTION_VERSION_MAINTENANCE="Unofficial"
+fi
 # Acceptable maintenance versions are; Stable, Official, Nightly or Unofficial
 
 
