@@ -37,7 +37,10 @@ usage() {
     echo -e "    -k  Rewrite roomservice after dependencies update"
     echo -e "    -l  Optimizations for devices with low-RAM"
     echo -e "    -o# Only build:"
-    echo -e "        1 - Boot Image"
+    echo -e "        1 - Boot ZIP"
+    echo -e "        2 - Boot Image"
+    echo -e "        3 - Recovery Image"
+    echo -e "        4 - Boot and Recovery Images"
     echo -e "    -r  Reset source tree before build"
     echo -e "    -s# Sync options before build:"
     echo -e "        0 - Force sync"
@@ -394,9 +397,21 @@ fi
 
 # Start compilation
 if [ "$opt_only" -eq 1 ]; then
-    echo -e "${bldcya}Starting compilation: ${bldgrn}Building Boot Image only${rst}"
+    echo -e "${bldcya}Starting compilation: ${bldgrn}Building Boot ZIP only${rst}"
     echo ""
     make -j$opt_jobs$opt_v$opt_i bootzip
+elif [ "$opt_only" -eq 2 ]; then
+    echo -e "${bldcya}Starting compilation: ${bldgrn}Building Boot Image only${rst}"
+    echo ""
+    make -j$opt_jobs$opt_v$opt_i bootimage
+elif [ "$opt_only" -eq 3 ]; then
+    echo -e "${bldcya}Starting compilation: ${bldgrn}Building Recovery Image only${rst}"
+    echo ""
+    make -j$opt_jobs$opt_v$opt_i recoveryimage
+elif [ "$opt_only" -eq 4 ]; then
+    echo -e "${bldcya}Starting compilation: ${bldgrn}Building Boot and Recovery Images only${rst}"
+    echo ""
+    make -j$opt_jobs$opt_v$opt_i bootimage recoveryimage
 else
     if [ -z "$EMOTION_VERSION_MINOR" ]; then
         echo -e "${bldcya}Starting compilation: ${bldgrn}Building ${bldylw}EMOTION-ROM ${bldmag}$EMOTION_VERSION_MAJOR ${bldred}$EMOTION_MAINTENANCE${rst}"
