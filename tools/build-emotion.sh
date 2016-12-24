@@ -26,8 +26,9 @@ usage() {
     echo -e "    -a  Disable ADB authentication and set root access to Apps and ADB"
     echo -e "    -b  Build a single APK"
     echo -e "    -c# Cleaning options before build:"
-    echo -e "        1 - Run make clean"
-    echo -e "        2 - Run make installclean"
+    echo -e "        1 - Run make clean and continue"
+    echo -e "        2 - Run make installclean and continue"
+    echo -e "        3 - Run make clean/clobber and exit"
     echo -e "    -d  Build rom without ccache"
     echo -e "    -e# Extra build output options:"
     echo -e "        1 - Verbose build output"
@@ -233,6 +234,13 @@ elif [ "$opt_clean" -eq 2 ]; then
     make installclean >/dev/null
     echo -e "${bldcya}Output directory is: ${bldred}Dirty${rst}"
     echo ""
+elif [ "$opt_clean" -eq 3 ]; then
+    echo -e "${bldcya}Cleaning output directory${rst}"
+    make clean >/dev/null
+    make clobber >/dev/null
+    echo -e "${bldcya}Output directory is: ${bldgrn}Clean${rst}"
+    echo ""
+    exit 0
 else
     if [ -d "$OUTDIR/target" ]; then
         echo -e "${bldcya}Output directory is: ${bldylw}Untouched${rst}"
