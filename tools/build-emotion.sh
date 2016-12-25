@@ -20,7 +20,7 @@
 
 usage() {
     echo -e "${bldblu}Usage:${bldcya}"
-    echo -e "  build-emotion.sh [options] device"
+    echo -e "  build-emotion.sh [options] device [user|userdebug|eng]"
     echo ""
     echo -e "${bldblu}  Options:${bldcya}"
     echo -e "    -a  Disable ADB authentication and set root access to Apps and ADB"
@@ -180,10 +180,19 @@ while getopts "abc:de:ij:klo:rs:w:" opt; do
 done
 
 shift $((OPTIND-1))
-if [ "$#" -ne 1 ]; then
+if [ "$#" -ne 1 ] && [ "$#" -ne 2 ]; then
     usage
 fi
 device="$1"
+
+case "$2" in
+user|userdebug|eng)
+    variant="$2"
+    ;;
+*)
+    variant="userdebug"
+    ;;
+esac
 
 
 # Ccache options
@@ -230,7 +239,7 @@ if [ "$opt_clean" -eq 1 ]; then
     echo ""
 elif [ "$opt_clean" -eq 2 ]; then
     . build/envsetup.sh
-    lunch "emotion_$device-userdebug"
+    lunch "emotion_$device-$variant"
     make installclean >/dev/null
     echo -e "${bldcya}Output directory is: ${bldred}Dirty${rst}"
     echo ""
@@ -263,7 +272,7 @@ if [ "$opt_build" -ne 0 ]; then
     trap 'abort' 0
     set -e
     . build/envsetup.sh
-    lunch "emotion_$device-userdebug"
+    lunch "emotion_$device-$variant"
     echo -e "${bldcya}What application do you want compile?${rst}"
     read REPLAY
     make "$REPLAY"
@@ -366,7 +375,7 @@ rm -f "$OUTDIR"/target/product/"$device"/obj/KERNEL_OBJ/.version
 # Lunch device
 echo ""
 echo -e "${bldcya}Lunching device${rst}"
-lunch "emotion_$device-userdebug"
+lunch "emotion_$device-$variant"
 
 
 # Get extra options for build
