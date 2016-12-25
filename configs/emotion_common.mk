@@ -18,14 +18,14 @@
 #
 
 # EMOTION version
-EMOTIONVERSION := $(shell echo $(EMOTION_VERSION) | sed -e 's/^[ \t]*//;s/[ \t]*$$//;s/ /./g')
+EMOTIONVERSION := $(shell echo $(EMOTION_VERSION) | sed -e 's/^[ \t]*//;s/[ \t]*$$//;s/ /-/g')
 BOARD := $(subst emotion_,,$(TARGET_PRODUCT))
-EMOTION_BUILD_VERSION := Emotion-$(BOARD)-$(EMOTIONVERSION)-$(shell date +%Y%m%d-%H%M%S)
+EMOTION_BUILD_VERSION := Emotion-$(PLATFORM_VERSION)-$(EMOTIONVERSION)-$(BOARD)
 PRODUCT_NAME := $(TARGET_PRODUCT)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.emotion.version=$(EMOTIONVERSION) \
-    ro.emotion.branch=$(EMOTION_VERSION_MAJOR) \
+    ro.emotion.branch=Android-$(PLATFORM_VERSION) \
     ro.emotion.releasetype=$(EMOTION_VERSION_MAINTENANCE) \
     ro.emotion.device=$(EMOTION_DEVICE) \
     ro.modversion=$(EMOTIONVERSION) \
