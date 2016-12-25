@@ -1,17 +1,17 @@
 [
  {
-   "remote":      "emotroid",
-   "repository":  "Emotroid-Rom/android_device_moto_shamu",
+   "remote":      "emotion",
+   "repository":  "EmotionOS/android_device_moto_shamu",
    "target_path": "device/moto/shamu",
    "branch":      "nougat"
  },
   {
-    "repository":  "Emotroid-Rom/android_kernel_moto_shamu",
+    "repository":  "EmotionOS/android_kernel_moto_shamu",
     "target_path": "kernel/moto/shamu",
     "branch":      "nougat"
   },
   {
-    "repository":  "Emotroid-Rom/proprietary_vendor_motorola",
+    "repository":  "EmotionOS/proprietary_vendor_motorola",
     "target_path": "vendor/motorola",
     "branch":      "nougat"
   }

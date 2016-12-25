@@ -1,25 +1,25 @@
 [
   {
-    "remote":"emotroid",
-    "repository": "Emotroid-Rom/android_device_samsung_trlte-common",
+    "remote":"emotion",
+    "repository": "EmotionOS/android_device_samsung_trlte-common",
     "target_path": "device/samsung/trlte-common",
     "branch": "nougat"
   },
   {
-    "remote":"emotroid",
-    "repository": "Emotroid-Rom/android_device_samsung_trltespr",
+    "remote":"emotion",
+    "repository": "EmotionOS/android_device_samsung_trltespr",
     "target_path": "device/samsung/trltespr",
     "branch": "nougat"
   },
   {
-    "remote":"emotroid",
-    "repository": "Emotroid-Rom/proprietary_vendor_samsung",
+    "remote":"emotion",
+    "repository": "EmotionOS/proprietary_vendor_samsung",
     "target_path": "vendor/samsung",
     "branch": "nougat"
   },
   {
-    "remote":"emotroid",
-    "repository": "Emotroid-Rom/emotion_cm_kernel_trlte",
+    "remote":"emotion",
+    "repository": "EmotionOS/emotion_cm_kernel_trlte",
     "target_path": "kernel/samsung/trlte",
     "branch": "nougat"
   },
@@ -36,8 +36,8 @@
     "branch": "cm-14.1"
   },
   {
-    "remote": "emotroid",
-    "repository": "Emotroid-Rom/android_device_qcom_common",
+    "remote": "emotion",
+    "repository": "EmotionOS/android_device_qcom_common",
     "target_path": "device/qcom/common",
     "branch": "nougat"
   },
