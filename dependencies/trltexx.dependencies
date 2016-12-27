@@ -25,13 +25,13 @@
   },
   {
     "remote": "cm",
-    "repository": "CyanogenMod/android_hardware_samsung",
+    "repository": "LineageOS/android_hardware_samsung",
     "target_path": "hardware/samsung",
     "branch": "cm-14.1"
   },
   {
     "remote": "cm",
-    "repository": "CyanogenMod/android_device_samsung_qcom-common",
+    "repository": "LineageOS/android_device_samsung_qcom-common",
     "target_path": "device/samsung/qcom-common",
     "branch": "cm-14.1"
   },
@@ -43,7 +43,7 @@
   },
   {
     "remote": "cm",
-    "repository": "CyanogenMod/android_external_stlport",
+    "repository": "LineageOS/android_external_stlport",
     "target_path": "external/stlport",
     "branch": "cm-14.1"
   }  
