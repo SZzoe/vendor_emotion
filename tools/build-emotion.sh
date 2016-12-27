@@ -70,12 +70,12 @@ ulimit -s unlimited
 
 
 # EMOTION version
-export EMOTION_VERSION_MAJOR="NG"
-export EMOTION_VERSION_MINOR="beta32-r1"
+export EMOTION_VERSION_MAJOR=$(date -u +%Y%m%d)
+export EMOTION_VERSION_MINOR="R1"
 if [ -z "${EMOTION_VERSION_MAINTENANCE}" ]; then
-    export EMOTION_VERSION_MAINTENANCE="Unofficial"
+    export EMOTION_VERSION_MAINTENANCE="UNOFFICIAL"
 fi
-# Acceptable maintenance versions are; Stable, Official, Nightly or Unofficial
+# Acceptable maintenance versions are; STABLE, OFFICIAL, NIGHTLY or UNOFFICIAL
 
 
 # Default global variable values with preference to environmant.
