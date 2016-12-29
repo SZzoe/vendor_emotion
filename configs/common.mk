@@ -184,8 +184,6 @@ PRODUCT_PACKAGES += \
     Eleven \
     ExactCalculator \
     LockClock \
-    Screencast \
-    SoundRecorder \
     Trebuchet \
     WallpaperPicker \
     WeatherManagerService \
