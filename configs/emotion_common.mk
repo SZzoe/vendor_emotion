@@ -25,7 +25,7 @@ PRODUCT_NAME := $(TARGET_PRODUCT)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.emotion.version=$(EMOTIONVERSION) \
-    ro.emotion.branch=Android-$(PLATFORM_VERSION) \
+    ro.emotion.branch=nougat \
     ro.emotion.releasetype=$(EMOTION_VERSION_MAINTENANCE) \
     ro.emotion.device=$(EMOTION_DEVICE) \
     ro.modversion=$(EMOTIONVERSION) \
@@ -36,7 +36,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.romstats.url=http://emotion.esy.es/ \
     ro.romstats.name=Emotion \
     ro.romstats.buildtype=$(EMOTION_VERSION_MAINTENANCE) \
-    ro.romstats.version=$(EMOTION_VERSION_MINOR) \
+    ro.romstats.version=$(EMOTION_VERSION_MAJOR) \
     ro.romstats.tframe=1 \
     ro.romstats.askfirst=1 \
     ro.romstats.ga=UA-76534441-1

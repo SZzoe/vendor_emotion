@@ -72,7 +72,6 @@ ulimit -s unlimited
 
 # EMOTION version
 export EMOTION_VERSION_MAJOR=$(date -u +%Y%m%d)
-export EMOTION_VERSION_MINOR="R1"
 if [ -z "${EMOTION_VERSION_MAINTENANCE}" ]; then
     export EMOTION_VERSION_MAINTENANCE="UNOFFICIAL"
 fi
@@ -91,11 +90,8 @@ if [ -s ~/EMOTIONname ]; then
 else
     export EMOTION_MAINTENANCE="$EMOTION_VERSION_MAINTENANCE"
 fi
-if [ -z "$EMOTION_VERSION_MINOR" ]; then
-    export EMOTION_VERSION="$EMOTION_VERSION_MAJOR $EMOTION_MAINTENANCE"
-else
-    export EMOTION_VERSION="$EMOTION_VERSION_MAJOR $EMOTION_VERSION_MINOR $EMOTION_MAINTENANCE"
-fi
+
+export EMOTION_VERSION="$EMOTION_VERSION_MAJOR $EMOTION_MAINTENANCE"
 
 
 # Check directories
@@ -430,11 +426,7 @@ elif [ "$opt_only" -eq 4 ]; then
     echo ""
     make -j$opt_jobs$opt_v$opt_i bootimage recoveryimage
 else
-    if [ -z "$EMOTION_VERSION_MINOR" ]; then
-        echo -e "${bldcya}Starting compilation: ${bldgrn}Building ${bldylw}EMOTION-ROM ${bldmag}$EMOTION_VERSION_MAJOR ${bldred}$EMOTION_MAINTENANCE${rst}"
-    else
-        echo -e "${bldcya}Starting compilation: ${bldgrn}Building ${bldylw}EMOTION-ROM ${bldmag}$EMOTION_VERSION_MAJOR ${bldcya}$EMOTION_VERSION_MINOR ${bldred}$EMOTION_MAINTENANCE${rst}"
-    fi
+    echo -e "${bldcya}Starting compilation: ${bldgrn}Building ${bldylw}EMOTION-ROM ${bldmag}$EMOTION_VERSION_MAJOR ${bldred}$EMOTION_MAINTENANCE${rst}"
     echo ""
     make -j$opt_jobs$opt_v$opt_i bacon
 fi
