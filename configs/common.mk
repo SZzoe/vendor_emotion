@@ -111,7 +111,6 @@ PRODUCT_COPY_FILES += \
     vendor/emotion/prebuilt/common/etc/persist.conf:system/etc/persist.conf
 
 PRODUCT_COPY_FILES += \
-    vendor/emotion/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so \
     vendor/emotion/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf
 
 # Copy over added mimetype supported in libcore.net.MimeUtils
@@ -147,14 +146,14 @@ PRODUCT_PACKAGES += \
     CMParts \
     Development \
     KernelAdiutor \
-    Savoca-kcal \
     AdAway \
     LatinIME \
     LatinImeDictionaryPack \
     Stk \
     OmniSwitch \
     EmotionControl \
-    Masquerade
+    masquerade \
+    Substratum
 
 #Build EmotionOTA only if EMOTION_VERSION_MAINTENANCE isn't Unofficial
 ifneq ($(EMOTION_VERSION_MAINTENANCE),Unofficial)
