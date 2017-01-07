@@ -37,8 +37,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # needed for statistics
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.romstats.url=http://emotion.esy.es/ \
-    ro.romstats.name=Emotion \
+    ro.romstats.url=http://emotionos.esy.es/ \
+    ro.romstats.name=EmotionOS \
     ro.romstats.buildtype=$(EMOTION_VERSION_MAINTENANCE) \
     ro.romstats.version=$(EMOTION_VERSION_MAJOR) \
     ro.romstats.tframe=1 \
