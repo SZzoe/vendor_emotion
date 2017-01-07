@@ -31,6 +31,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.modversion=$(EMOTIONVERSION) \
     emotion.ota.version=$(EMOTION_BUILD_VERSION)
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.cm.version=$(EMOTIONVERSION) \
+    ro.cmlegal.url=https://lineageos.org/legal
+
 # needed for statistics
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.romstats.url=http://emotion.esy.es/ \
