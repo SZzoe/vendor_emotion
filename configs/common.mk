@@ -153,8 +153,7 @@ PRODUCT_PACKAGES += \
     OmniSwitch \
     EmotionControl \
     masquerade \
-    Substratum \
-    SnapdragonGallery
+    Substratum
 
 #Build EmotionOTA only if EMOTION_VERSION_MAINTENANCE isn't Unofficial
 ifneq ($(EMOTION_VERSION_MAINTENANCE),Unofficial)
