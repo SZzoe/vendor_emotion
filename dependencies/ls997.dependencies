@@ -1,0 +1,50 @@
+[
+ {
+   "remote":      "emotion",
+   "repository":  "EmotionOS/android_device_lge_ls997",
+   "target_path": "device/lge/ls997",
+   "branch":      "nougat"
+ },
+ {
+   "remote":      "emotion",
+   "repository":  "EmotionOS/android_device_lge_v20-common",
+   "target_path": "device/lge/v20-common",
+   "branch":      "nougat"
+ },
+ {
+   "remote":      "emotion",
+   "repository":  "EmotionOS/android_kernel_lge_msm8996",
+   "target_path": "kernel/lge/msm8996",
+   "branch":      "cm-14.0"
+ },
+ {
+   "remote":      "emotion",
+   "repository":  "EmotionOS/android_device_qcom_common",
+   "target_path": "device/qcom/common",
+   "branch":      "nougat"
+ },
+ {
+   "remote":      "cm",
+   "repository":  "LineageOS/android_vendor_nxp-nfc_opensource_frameworks",
+   "target_path": "vendor/nxp-nfc/opensource/frameworks",
+   "branch":      "cm-14.1"
+ },
+ {
+   "remote":      "cm",
+   "repository":  "LineageOS/android_vendor_nxp-nfc_opensource_libnfc-nci",
+   "target_path": "vendor/nxp-nfc/opensource/libnfc-nci",
+   "branch":      "cm-14.1"
+ },
+ {
+   "remote":      "cm",
+   "repository":  "LineageOS/android_vendor_nxp-nfc_opensource_Nfc",
+   "target_path": "vendor/nxp-nfc/opensource/Nfc",
+   "branch":      "cm-14.1"
+ },
+ {
+   "remote":      "emotion",
+   "repository":  "EmotionOS/proprietary_vendor_lge",
+   "target_path": "vendor/lge",
+   "branch":      "nougat"
+ }
+]
