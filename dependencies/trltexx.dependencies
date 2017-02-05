@@ -19,7 +19,7 @@
   },
   {
     "remote":"emotion",
-    "repository": "EmotionOS/emotion_cm_kernel_trlte",
+    "repository": "EmotionOS/android_kernel_samsung_trlte",
     "target_path": "kernel/samsung/trlte",
     "branch": "nougat"
   },
