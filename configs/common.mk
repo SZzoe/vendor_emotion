@@ -149,13 +149,18 @@ PRODUCT_PACKAGES += \
     OmniSwitch \
     EmotionControl \
     ThemeInterfacer \
-    Substratum
+    Substratum \
+    MagiskManager
 
 #Build EmotionOTA only if EMOTION_VERSION_MAINTENANCE isn't Unofficial
 ifneq ($(EMOTION_VERSION_MAINTENANCE),Unofficial)
 PRODUCT_PACKAGES += \
     EmotionOTA
 endif
+
+# Copy Magisk zip
+PRODUCT_COPY_FILES += \
+    vendor/emotion/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
 
 # Optional EMOTION packages
 PRODUCT_PACKAGES += \
