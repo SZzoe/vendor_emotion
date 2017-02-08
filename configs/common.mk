@@ -301,7 +301,7 @@ PRODUCT_VERSION_MINOR = 0
 PRODUCT_VERSION_MAINTENANCE = 0
 
 # Version information used on all builds
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_UTC_DATE=$(shell date +"%s")
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_VERSION_TAGS=release-keys USER=$(shell whoami) BUILD_UTC_DATE=$(shell date +"%s")
 
 # Call EMOTION Stuff
 $(call inherit-product, vendor/emotion/configs/emotion_common.mk)
