@@ -77,9 +77,10 @@ endif
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/emotion/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/emotion/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/emotion/prebuilt/bin/blacklist:system/addon.d/blacklist
+    vendor/emotion/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/emotion/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/emotion/prebuilt/common/bin/50-emotion.sh:system/addon.d/50-emotion.sh \
+    vendor/emotion/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \
     vendor/emotion/configs/permissions/backup.xml:system/etc/sysconfig/backup.xml
