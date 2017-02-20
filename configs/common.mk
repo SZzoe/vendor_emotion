@@ -181,7 +181,6 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     CMParts \
     CMSettingsProvider \
-    CMWallpapers \
     Eleven \
     ExactCalculator \
     LockClock \
