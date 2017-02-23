@@ -14,10 +14,6 @@ PRODUCT_PACKAGES += \
     libvideoeditor_videofilters \
     libvideoeditorplayer
 
-# Themes
-PRODUCT_PACKAGES += \
-    HexoLibre
-
 # Recorder
 PRODUCT_PACKAGES += \
     Recorder
