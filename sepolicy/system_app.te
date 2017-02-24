@@ -13,3 +13,9 @@ allow system_app ctl_bootanim_prop:property_service set;
 
 # Settings app wants to read ro.adb.secure
 get_prop(system_app, adbsecure_prop)
+
+# Emotion Control
+allow system_app system_data_file:dir write;
+allow system_app system_data_file:dir add_name;
+allow system_app system_data_file:file create;
+allow system_app system_data_file:file { setattr write };
