@@ -147,7 +147,7 @@ PRODUCT_PACKAGES += \
     Stk \
     OmniSwitch \
     EmotionControl \
-    masquerade \
+    ThemeInterfacer \
     Substratum
 
 #Build EmotionOTA only if EMOTION_VERSION_MAINTENANCE isn't Unofficial

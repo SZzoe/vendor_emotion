@@ -78,6 +78,12 @@ userdebug_or_eng(`
   allow platform_app sudaemon:unix_stream_socket { connectto read write setopt ioctl };
   allow platform_app superuser_device:dir { create rw_dir_perms setattr unlink };
 
+  # Allow privileged apps to start su commands
+  allow priv_app su_exec:file { execute_no_trans getattr open read execute };
+  allow priv_app superuser_device:sock_file { read write create setattr unlink getattr };
+  allow priv_app sudaemon:unix_stream_socket { connectto read write setopt ioctl };
+  allow priv_app superuser_device:dir { create rw_dir_perms setattr unlink };
+
   allow kernel sudaemon:fd { use };
 
   allow qti_init_shell su_exec:file rx_file_perms;
