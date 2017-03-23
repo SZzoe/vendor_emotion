@@ -75,9 +75,10 @@ PRODUCT_COPY_FILES += \
     vendor/emotion/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/emotion/prebuilt/common/bin/50-emotion.sh:system/addon.d/50-emotion.sh \
     vendor/emotion/prebuilt/common/bin/blacklist:system/addon.d/blacklist
-# Backup Services whitelist
+# System feature whitelists
 PRODUCT_COPY_FILES += \
-    vendor/emotion/configs/permissions/backup.xml:system/etc/sysconfig/backup.xml
+    vendor/emotion/configs/permissions/backup.xml:system/etc/sysconfig/backup.xml \
+    vendor/emotion/configs/permissions/power-whitelist.xml:system/etc/sysconfig/power-whitelist.xml
 
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
