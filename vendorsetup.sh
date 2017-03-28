@@ -14,3 +14,7 @@ add_lunch_combo emotion_trltespr-userdebug
 add_lunch_combo emotion_trltetmo-userdebug
 add_lunch_combo emotion_expressltexx-userdebug
 add_lunch_combo emotion_oneplus3-userdebug
+add_lunch_combo emotion_ls997-userdebug
+add_lunch_combo emotion_us996-userdebug
+add_lunch_combo emotion_vs995-userdebug
+add_lunch_combo emotion_h918-userdebug
