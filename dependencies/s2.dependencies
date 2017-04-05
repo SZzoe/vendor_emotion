@@ -18,7 +18,7 @@
     "branch": "cm-14.1"
   },
   { 
-    "remote":	  "emotion"
+    "remote":	  "emotion",
     "repository": "EmotionOS/device_leeco_s2",
     "target_path": "device/leeco/s2",
     "brach":	  "nougat"     
