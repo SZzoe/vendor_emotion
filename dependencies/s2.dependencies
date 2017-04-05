@@ -1,0 +1,26 @@
+[
+  {
+    "remote":	  "cm",
+    "repository": "LineageOS/android_device_qcom_common",
+    "target_path": "device/qcom/common",
+    "branch": "cm-14.1"
+  },
+  {
+    "remote":	  "cm",
+    "repository": "LineageOS/android_kernel_leeco_msm8976",
+    "target_path": "kernel/leeco/msm8976",
+    "branch": "cm-14.1"
+  },
+  {
+    "remote":	  "emotion",
+    "repository": "EmotionOS/proprietary_vendor_leeco",
+    "target_path": "vendor/leeco",
+    "branch": "cm-14.1"
+  },
+  { 
+    "remote":	  "emotion"
+    "repository": "EmotionOS/device_leeco_s2",
+    "target_path": "device/leeco/s2",
+    "brach":	  "nougat"     
+  }
+]
