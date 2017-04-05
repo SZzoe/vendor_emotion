@@ -1,9 +1,9 @@
 [
   {
-    "remote":	  "cm",
-    "repository": "LineageOS/android_device_qcom_common",
+    "remote":	  "emotion",
+    "repository": "EmotionOS/android_device_qcom_common",
     "target_path": "device/qcom/common",
-    "branch": "cm-14.1"
+    "branch": "nougat"
   },
   {
     "remote":	  "cm",
