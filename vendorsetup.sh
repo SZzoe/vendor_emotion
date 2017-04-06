@@ -18,4 +18,4 @@ add_lunch_combo emotion_ls997-userdebug
 add_lunch_combo emotion_us996-userdebug
 add_lunch_combo emotion_vs995-userdebug
 add_lunch_combo emotion_h918-userdebug
-add_lunch_combo emotion_s2-userdebug
+add_lunch_combo emotion_klte-userdebug

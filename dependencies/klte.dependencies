@@ -1,0 +1,29 @@
+[
+  {
+    "remote":"cm",
+    "repository": "LineageOS/android_device_samsung_msm8974-common",
+    "target_path": "device/samsung/msm8974-common",
+    "branch": "cm-14.1"
+  },
+  {
+    "remote":"emotion",
+    "repository": "EmotionOS/android_kernel_samsung_klte",
+    "target_path": "kernel/samsung/klte"
+  },
+  {
+    "remote":"cm",
+    "repository": "LineageOS/android_external_stlport",
+    "target_path": "external/stlport",
+    "branch": "cm-14.1"
+  },
+   {
+    "remote":"emotion",
+    "repository": "EmotionOS/android_device_samsung_klte",
+    "target_path": "device/samsung/klte"
+  },
+  {
+    "remote":"emotion",
+    "repository": "EmotionOS/android_device_samsung_klte-common",
+    "target_path": "device/samsung/klte-common"
+  }
+]
