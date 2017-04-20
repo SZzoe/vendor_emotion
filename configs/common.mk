@@ -178,6 +178,7 @@ PRODUCT_PACKAGES += \
     CustomTiles \
     Eleven \
     ExactCalculator \
+    Jelly \
     LockClock \
     Trebuchet \
     WallpaperPicker \
