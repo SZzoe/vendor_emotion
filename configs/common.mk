@@ -158,6 +158,12 @@ PRODUCT_PACKAGES += \
     EmotionOTA
 endif
 
+# Copy latinime for gesture typing
+PRODUCT_COPY_FILES += \
+    vendor/emotion/prebuilt/common/lib64/libjni_keyboarddecoder.so:system/lib64/libjni_keyboarddecoder \
+    vendor/emotion/prebuilt/common/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinimegoogle.so \
+    vendor/emotion/prebuilt/common/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
+
 # Copy Magisk zip
 PRODUCT_COPY_FILES += \
     vendor/emotion/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
