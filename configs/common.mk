@@ -149,8 +149,7 @@ PRODUCT_PACKAGES += \
     OmniSwitch \
     EmotionControl \
     ThemeInterfacer \
-    Substratum \
-    MagiskManager
+    Substratum
 
 #Build EmotionOTA only if EMOTION_VERSION_MAINTENANCE isn't Unofficial
 ifneq ($(EMOTION_VERSION_MAINTENANCE),Unofficial)
@@ -163,10 +162,6 @@ PRODUCT_COPY_FILES += \
     vendor/emotion/prebuilt/common/lib64/libjni_keyboarddecoder.so:system/lib64/libjni_keyboarddecoder \
     vendor/emotion/prebuilt/common/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinimegoogle.so \
     vendor/emotion/prebuilt/common/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
-
-# Copy Magisk zip
-PRODUCT_COPY_FILES += \
-    vendor/emotion/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
 
 # Optional EMOTION packages
 PRODUCT_PACKAGES += \
