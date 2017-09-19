@@ -193,12 +193,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AudioFX \
     CMAudioService \
-    CMParts \
-    CMSettingsProvider \
     CustomTiles \
     Eleven \
     ExactCalculator \
     Jelly \
+    LineageParts \
+    LineageSettingsProvider \
     LockClock \
     Trebuchet \
     WallpaperPicker \
