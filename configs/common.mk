@@ -138,6 +138,16 @@ include vendor/emotion/configs/cm_audio.mk
 ifneq ($(TARGET_DISABLE_CMSDK), true)
 # CMSDK
 include vendor/emotion/configs/cmsdk_common.mk
+
+# Include audio files
+include vendor/emotion/configs/audio.mk
+
+# Theme engine
+include vendor/emotion/configs/themes_common.mk
+
+ifneq ($(TARGET_DISABLE_LINEAGE_SDK), true)
+# Lineage SDK
+include vendor/emoion/configs/lineage_sdk_common.mk
 endif
 
 # Required EMOTION packages
