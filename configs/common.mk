@@ -106,8 +106,8 @@ PRODUCT_COPY_FILES += \
 endif
 
 # EMOTION-specific init file
-PRODUCT_COPY_FILES += \
-    vendor/emotion/prebuilt/common/etc/init.local.rc:root/init.emotion.rc \
+$(foreach f,$(wildcard vendor/emotion/prebuilt/common/etc/init/*.rc),\
+	$(eval PRODUCT_COPY_FILES += $(f):system/etc/init/$(notdir $f)))
 
 # Installer
 PRODUCT_COPY_FILES += \
