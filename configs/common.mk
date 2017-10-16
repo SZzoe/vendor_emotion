@@ -88,6 +88,10 @@ PRODUCT_COPY_FILES += \
     vendor/emotion/configs/permissions/backup.xml:system/etc/sysconfig/backup.xml \
     vendor/emotion/configs/permissions/power-whitelist.xml:system/etc/sysconfig/power-whitelist.xml
 
+# Lineage-specific broadcast actions whitelist
+PRODUCT_COPY_FILES += \
+    vendor/lineage/config/permissions/lineage-sysconfig.xml:system/etc/sysconfig/lineage-sysconfig.xml
+
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
     vendor/emotion/prebuilt/common/bin/otasigcheck.sh:install/bin/otasigcheck.sh
