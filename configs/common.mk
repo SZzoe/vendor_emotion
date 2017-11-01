@@ -90,7 +90,7 @@ PRODUCT_COPY_FILES += \
 
 # Lineage-specific broadcast actions whitelist
 PRODUCT_COPY_FILES += \
-    vendor/lineage/config/permissions/lineage-sysconfig.xml:system/etc/sysconfig/lineage-sysconfig.xml
+    vendor/emotion/configs/permissions/lineage-sysconfig.xml:system/etc/sysconfig/lineage-sysconfig.xml
 
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
