@@ -127,9 +127,6 @@ PRODUCT_COPY_FILES += \
 # Include CM audio files
 include vendor/emotion/configs/cm_audio.mk
 
-# Theme engine
-include vendor/emotion/configs/themes_common.mk
-
 ifneq ($(TARGET_DISABLE_CMSDK), true)
 # CMSDK
 include vendor/emotion/configs/cmsdk_common.mk
