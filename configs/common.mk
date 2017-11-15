@@ -134,6 +134,8 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
 
 PRODUCT_COPY_FILES += \
+    vendor/emotion/configs/permissions/org.lineageos.android.xml:system/etc/permissions/org.lineageos.android.xml \
+    vendor/emotion/configs/permissions/privapp-permissions-lineage.xml:system/etc/permissions/privapp-permissions-lineage.xml \
     vendor/emotion/configs/permissions/com.emotion.android.xml:system/etc/permissions/com.emotion.android.xml
 
 # Include CM audio files
