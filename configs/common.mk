@@ -196,7 +196,6 @@ PRODUCT_PACKAGES += \
 # Custom CM packages
 PRODUCT_PACKAGES += \
     AudioFX \
-    CMAudioService \
     CustomTiles \
     Eleven \
     ExactCalculator \
