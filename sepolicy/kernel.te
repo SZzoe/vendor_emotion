@@ -1,8 +1,0 @@
-# DriveDroid
-allow kernel sudaemon:fd { use };
-
-# ZRAM
-allow kernel untrusted_app_tmpfs:file { rw_file_perms };
-
-# used by sdcardfs to read package list
-allow kernel system_data_file:file open;
