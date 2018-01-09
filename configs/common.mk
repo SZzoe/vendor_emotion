@@ -37,6 +37,7 @@ endif
 
 # Common dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/emotion/overlay/dictionaries
+
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
@@ -83,14 +84,19 @@ PRODUCT_COPY_FILES += \
     vendor/emotion/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/emotion/prebuilt/common/bin/50-emotion.sh:system/addon.d/50-emotion.sh \
     vendor/emotion/prebuilt/common/bin/blacklist:system/addon.d/blacklist
+	
 # System feature whitelists
 PRODUCT_COPY_FILES += \
-    vendor/emotion/configs/permissions/backup.xml:system/etc/sysconfig/backup.xml \
-    vendor/emotion/configs/permissions/power-whitelist.xml:system/etc/sysconfig/power-whitelist.xml
+    vendor/emotion/configs/permissions/backup.xml:system/etc/sysconfig/backup.xml
 
 # Lineage-specific broadcast actions whitelist
 PRODUCT_COPY_FILES += \
     vendor/emotion/configs/permissions/lineage-sysconfig.xml:system/etc/sysconfig/lineage-sysconfig.xml
+	
+PRODUCT_COPY_FILES += \
+    vendor/emotion/configs/permissions/org.lineageos.android.xml:system/etc/permissions/org.lineageos.android.xml \
+    vendor/emotion/configs/permissions/privapp-permissions-lineage.xml:system/etc/permissions/privapp-permissions-lineage.xml \
+    vendor/emotion/configs/permissions/com.emotion.android.xml:system/etc/permissions/com.emotion.android.xml
 
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
@@ -133,11 +139,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
 
-PRODUCT_COPY_FILES += \
-    vendor/emotion/configs/permissions/org.lineageos.android.xml:system/etc/permissions/org.lineageos.android.xml \
-    vendor/emotion/configs/permissions/privapp-permissions-lineage.xml:system/etc/permissions/privapp-permissions-lineage.xml \
-    vendor/emotion/configs/permissions/com.emotion.android.xml:system/etc/permissions/com.emotion.android.xml
-
 # Include CM audio files
 include vendor/emotion/configs/cm_audio.mk
 
@@ -147,9 +148,6 @@ include vendor/emotion/configs/cmsdk_common.mk
 
 # Include audio files
 include vendor/emotion/configs/audio.mk
-
-# Theme engine
-include vendor/emotion/configs/themes_common.mk
 
 ifneq ($(TARGET_DISABLE_LINEAGE_SDK), true)
 # Lineage SDK
@@ -205,7 +203,6 @@ PRODUCT_PACKAGES += \
     Jelly \
     LineageParts \
     LineageSettingsProvider \
-    LockClock \
     Trebuchet \
     WallpaperPicker \
     WeatherManagerService \
@@ -247,7 +244,7 @@ PRODUCT_PACKAGES += \
 ifneq ($(WITH_CM_CHARGER),false)
 PRODUCT_PACKAGES += \
     charger_res_images \
-    cm_charger_res_images \
+    lineage_charger_res_images \
     font_log.png \
     libhealthd.cm
 endif
